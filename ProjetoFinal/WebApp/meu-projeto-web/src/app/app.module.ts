@@ -16,6 +16,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { NgxMaskModule } from 'ngx-mask';
 import { CpfPipe } from './pipes/cpf.pipe';
 import { TelefonePipe } from './pipes/telefone.pipe';
+import { TimeListagemComponent } from './pages/time-listagem/time-listagem.component';
+import { TimeCadastroComponent } from './pages/time-cadastro/time-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { TelefonePipe } from './pipes/telefone.pipe';
     PessoaCadastroComponent,
     ValidatorComponent,
     CpfPipe,
-    TelefonePipe
+    TelefonePipe,
+    TimeListagemComponent,
+    TimeCadastroComponent
   ],
   imports: [
     BrowserModule,
