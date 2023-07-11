@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import Pessoa from '../models/pessoa.model';
+import Time from '../models/time.model';
 import { Observable } from 'rxjs';
-import { Time } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -32,7 +31,7 @@ export class TimeService {
   }
 
   public obterTodos() {
-    return this.httpClient.get<Time[]>(this.urlBase + 'pessoa/obterTodos');
+    return this.httpClient.get<Time[]>(this.urlBase + 'time/obterTodos');
   }
 
 }

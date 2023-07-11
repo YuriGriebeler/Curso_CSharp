@@ -1,5 +1,6 @@
-import { Time } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
+import Time from 'src/app/models/time.model';
 import { AlertService } from 'src/app/services/alert.service';
 import { TimeService } from 'src/app/services/time.service';
 

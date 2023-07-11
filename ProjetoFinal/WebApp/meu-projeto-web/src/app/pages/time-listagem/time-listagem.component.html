@@ -3,7 +3,7 @@
   <h2 class="centralizar-texto">Listagem de times</h2>
 
   <div class="container-fluid d-flex justify-content-end">
-    <a class="btn btn-success" style="margin-bottom: 10px;" [routerLink]="['/pessoa/cadastro']" queryParamsHandling="preserve">Adicionar</a>
+    <a class="btn btn-success" style="margin-bottom: 10px;" [routerLink]="['/time/cadastro']" queryParamsHandling="preserve">Adicionar</a>
   </div>
 
   <div class="table-responsive">
@@ -30,11 +30,11 @@
             <!-- Botão de Exclusão -->
             <a class="btn btn-danger btn-sm" style="margin-right: 5px;" (click)="this.confirmarEExcluir(time.id)">Excluir</a>
         </td>
-          <td>{{pessoa.id}}</td>
-          <td>{{pessoa.nome}}</td>
-          <td>{{pessoa.divisao }}</td>
-          <td>{{pessoa.nometecnico }}</td>
-          <td>{{pessoa.cidade}}</td>
+          <td>{{time.id}}</td>
+          <td>{{time.nome}}</td>
+          <td>{{time.divisao }}</td>
+          <td>{{time.nometecnico }}</td>
+          <td>{{time.cidade}}</td>
         </tr>
 
       </tbody>
