@@ -59,9 +59,9 @@ export class TimeCadastroComponent implements OnInit {
     this.formulario = this.formBuilder.group({
       id: [0],
       nome: [null, [Validators.required, Validators.maxLength(100)]],
-      divisao: [null, [Validators.required, Validators.maxLength(14)]],
-      nometecnico: [null, [Validators.email]],
-      cidade: [null, [Validators.maxLength(30)]],
+      divisao: [null, [Validators.required, Validators.maxLength(100)]],
+      nomeTecnico: [null, [Validators.required, Validators.maxLength(14)]],
+      cidade: [null, [Validators.required, Validators.maxLength(20)]],
     });
   }
 

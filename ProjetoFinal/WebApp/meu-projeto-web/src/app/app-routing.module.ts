@@ -27,7 +27,7 @@ const routes: Routes = [
         children: [
           { path: 'listagem', component: TimeListagemComponent },
           { path: 'cadastro', component: TimeCadastroComponent },
-          { path: 'cadastro/:id', component: PessoaCadastroComponent },
+          { path: 'cadastro/:id', component: TimeCadastroComponent },
         ]
       },
     ]
