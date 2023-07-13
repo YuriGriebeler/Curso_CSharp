@@ -24,16 +24,18 @@
 
       <div class="form-group col-sm-12 col-md-12 col-lg-6">
         <label class="form-control-label label-obrigatorio">Cidade</label>
-        <input type="text" class="form-control" placeholder="Preencha um telefone" formControlName="cidade" >
+        <input type="text" class="form-control" placeholder="Preencha uma cidade" formControlName="cidade" >
         <validator [formSubmitted]="this.formSubmetido" [errors]="this.formulario?.get('cidade')?.errors"></validator>
       </div>
 
       <div class="form-group col-sm-12 action-buttons">
         <a class="btn btn-secondary float-left" [routerLink]="['/time/listagem']" queryParamsHandling="preserve">Voltar</a>
-        <button type="submit" class="btn btn-primary float-right">Salvar</button>
+        <button type="submit" class="btn btn-primary float-right" style="background-color:#f0780e">Salvar</button>
+          
       </div>
 
     </div>
+  
   </form>
 
 </div>
